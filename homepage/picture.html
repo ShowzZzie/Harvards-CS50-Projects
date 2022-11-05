@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Don't turn this picture around</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <button type="button" id="rotate" onclick="change(); this.onclick=null;">Don't rotate this picture</button>
+        </div>
+        <img src="https://preview.redd.it/r3w4bdgvrtz81.png?auto=webp&s=b6deeab1bab37ded06ab8ad1069a4ad5884d96ca" alt="Work of Art" id="pic" class="unrotated">
+        <script>
+            function change() {
+                if (document.getElementById("rotate").className=="rotated") {
+                    return;
+                }
+                else {
+                    document.getElementById("rotate").innerHTML = ":)";
+                    document.getElementById("pic").style.transform = 'rotate(270deg)';
+                    document.getElementById("pic").className = "rotated";
+                    var sound = new Audio("roll.wav");
+                    sound.play();
+                }
+            }
+        </script>
+    </body>
+</html>

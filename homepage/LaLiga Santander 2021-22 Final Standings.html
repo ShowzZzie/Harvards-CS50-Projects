@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>LaLiga Santander 2021/2022 Final Standings</title>
+        <style>
+            img {
+                height: 50px;
+                width: 50px;
+                object-fit:contain;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="table-responsive">
+            <table class="table text-center" id="LaLiga">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col" class="text-center">Pos.</th>
+                        <th scope="col" class="text-center">Team</th>
+                        <th scope="col" class="text-center">Matches played</th>
+                        <th scope="col" class="text-center">Wins</th>
+                        <th scope="col" class="text-center">Draws</th>
+                        <th scope="col" class="text-center">Losses</th>
+                        <th scope="col" class="text-center no-margin">Goals For:Against</th>
+                        <th scope="col" class="text-center">Goal Difference</th>
+                        <th scope="col" class="text-center">Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- FIRST -->
+                    <tr class="table-warning">
+                        <th scope="row">1</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" alt="Real Madrid Logo" class="logo">Real Madrid CF</td>
+                        <td>38</td>
+                        <td>26</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>80:31</td>
+                        <td>49</td>
+                        <td>86</td>
+                    </tr>
+                    <!-- SECOND -->
+                    <tr class="table-primary">
+                        <th scope="row">2</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="FC Barcelona Logo" class="logo">FC Barcelona</td>
+                        <td>38</td>
+                        <td>21</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>68:38</td>
+                        <td>30</td>
+                        <td>73</td>
+                    </tr>
+                    <!-- THIRD -->
+                    <tr class="table-primary">
+                        <th scope="row">3</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Atletico_Madrid_2017_logo.svg/1200px-Atletico_Madrid_2017_logo.svg.png" alt="Atlético de Madrid Logo" class="logo">Atlético de Madrid</td>
+                        <td>38</td>
+                        <td>21</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>65:43</td>
+                        <td>22</td>
+                        <td>71</td>
+                    </tr>
+                    <!-- FOURTH -->
+                    <tr class="table-primary">
+                        <th scope="row">4</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Sevilla_FC_logo.svg/1200px-Sevilla_FC_logo.svg.png" alt="Sevilla FC Logo" class="logo">Sevilla FC</td>
+                        <td>38</td>
+                        <td>18</td>
+                        <td>16</td>
+                        <td>4</td>
+                        <td>53:30</td>
+                        <td>23</td>
+                        <td>70</td>
+                    </tr>
+                    <!-- FIFTH -->
+                    <tr class="table-info">
+                        <th scope="row">5</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Real_betis_logo.svg/640px-Real_betis_logo.svg.png" alt="Real Betis Balompié Logo" class="logo">Real Betis Balompié</td>
+                        <td>38</td>
+                        <td>19</td>
+                        <td>8</td>
+                        <td>11</td>
+                        <td>62:40</td>
+                        <td>22</td>
+                        <td>65</td>
+                    </tr>
+                    <!-- SIXTH -->
+                    <tr class="table-info">
+                        <th scope="row">6</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Real_Sociedad_logo.svg/1200px-Real_Sociedad_logo.svg.png" alt="Real Sociedad Logo" class="logo">Real Sociedad</td>
+                        <td>38</td>
+                        <td>17</td>
+                        <td>11</td>
+                        <td>10</td>
+                        <td>40:37</td>
+                        <td>3</td>
+                        <td>62</td>
+                    </tr>
+                    <!-- SEVENTH -->
+                    <tr class="table-success">
+                        <th scope="row">7</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Villarreal_CF_logo-en.svg/1200px-Villarreal_CF_logo-en.svg.png" alt="Villarreal CF Logo" class="logo">Villarreal CF</td>
+                        <td>38</td>
+                        <td>16</td>
+                        <td>11</td>
+                        <td>11</td>
+                        <td>63:37</td>
+                        <td>26</td>
+                        <td>59</td>
+                    </tr>
+                    <!-- EIGHTH -->
+                    <tr class="table-light">
+                        <th scope="row">8</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Club_Athletic_Bilbao_logo.svg/1200px-Club_Athletic_Bilbao_logo.svg.png" alt="Athletic Club Logo" class="logo">Athletic Club</td>
+                        <td>38</td>
+                        <td>14</td>
+                        <td>13</td>
+                        <td>11</td>
+                        <td>43:36</td>
+                        <td>7</td>
+                        <td>55</td>
+                    </tr>
+                    <!-- NINTH -->
+                    <tr class="table-active">
+                        <th scope="row">9</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Valenciacf.svg/1200px-Valenciacf.svg.png" alt="Valencia CF Logo" class="logo">Valencia CF</td>
+                        <td>38</td>
+                        <td>11</td>
+                        <td>15</td>
+                        <td>12</td>
+                        <td>48:53</td>
+                        <td>-5</td>
+                        <td>48</td>
+                    </tr>
+                    <!-- TENTH -->
+                    <tr class="table-light">
+                        <th scope="row">10</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Osasuna_logo.svg/1200px-Osasuna_logo.svg.png" alt="CA Osasuna Logo" class="logo">Club Atlético Osasuna</td>
+                        <td>38</td>
+                        <td>12</td>
+                        <td>11</td>
+                        <td>15</td>
+                        <td>37:51</td>
+                        <td>-14</td>
+                        <td>47</td>
+                    </tr>
+                    <!-- ELEVENTH -->
+                    <tr class="table-active">
+                        <th scope="row">11</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/RC_Celta_de_Vigo_logo.svg/1200px-RC_Celta_de_Vigo_logo.svg.png" alt="RC Celta de Vigo Logo" class="logo">RC Celta de Vigo</td>
+                        <td>38</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>16</td>
+                        <td>43:43</td>
+                        <td>0</td>
+                        <td>46</td>
+                    </tr>
+                    <!-- TWELVETH -->
+                    <tr class="table-light">
+                        <th scope="row">12</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/fi/thumb/1/17/Rayo_Vallecano_de_Madridin_tunnus.svg/1200px-Rayo_Vallecano_de_Madridin_tunnus.svg.png" alt="Rayo Vallecano Logo" class="logo">Rayo Vallecano</td>
+                        <td>38</td>
+                        <td>11</td>
+                        <td>9</td>
+                        <td>18</td>
+                        <td>39:50</td>
+                        <td>-11</td>
+                        <td>42</td>
+                    </tr>
+                    <!-- THIRTEENTH -->
+                    <tr class="table-active">
+                        <th scope="row">13</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Elche_CF_logo.svg/1200px-Elche_CF_logo.svg.png" alt="Elche CF Logo" class="logo">Elche CF</td>
+                        <td>38</td>
+                        <td>11</td>
+                        <td>9</td>
+                        <td>18</td>
+                        <td>40:52</td>
+                        <td>-12</td>
+                        <td>42</td>
+                    </tr>
+                    <!-- FOURTEENTH -->
+                    <tr class="table-light">
+                        <th scope="row">14</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Rcd_espanyol_logo.svg/1200px-Rcd_espanyol_logo.svg.png" alt="RCD Espanyol Logo" class="logo">RCD Espanyol de Barcelona</td>
+                        <td>38</td>
+                        <td>10</td>
+                        <td>12</td>
+                        <td>16</td>
+                        <td>40:53</td>
+                        <td>-13</td>
+                        <td>42</td>
+                    </tr>
+                    <!-- FIFFTEENTH -->
+                    <tr class="table-active">
+                        <th scope="row">15</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Getafe_logo.svg/1200px-Getafe_logo.svg.png" alt="Getafe CF Logo" class="logo">Getafe CF</td>
+                        <td>38</td>
+                        <td>8</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>33:41</td>
+                        <td>-8</td>
+                        <td>39</td>
+                    </tr>
+                    <!-- SIXTEENTH -->
+                    <tr class="table-light">
+                        <th scope="row">16</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Rcd_mallorca.svg/1200px-Rcd_mallorca.svg.png" alt="RCD Mallorca Logo" class="logo">RCD Mallorca</td>
+                        <td>38</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>19</td>
+                        <td>36:63</td>
+                        <td>-27</td>
+                        <td>39</td>
+                    </tr>
+                    <!-- SEVENTEENTH -->
+                    <tr class="table-active">
+                        <th scope="row">17</th>
+                        <td class="text-start"><img src="Cadiz_logo.png" alt="Cádiz CF Logo" class="logo">Cádiz CF</td>
+                        <td>38</td>
+                        <td>8</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>35:51</td>
+                        <td>-16</td>
+                        <td>39</td>
+                    </tr>
+                    <!-- EIGHTEENTH -->
+                    <tr class="table-danger">
+                        <th scope="row">18</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Logo_of_Granada_Club_de_F%C3%BAtbol.svg/1200px-Logo_of_Granada_Club_de_F%C3%BAtbol.svg.png" alt="Granada CF Logo" class="logo">Granada CF</td>
+                        <td>38</td>
+                        <td>8</td>
+                        <td>14</td>
+                        <td>16</td>
+                        <td>44:61</td>
+                        <td>-17</td>
+                        <td>38</td>
+                    </tr>
+                    <!-- NINETEENTH -->
+                    <tr class="table-danger">
+                        <th scope="row">19</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Levante_Uni%C3%B3n_Deportiva%2C_S.A.D._logo.svg/1200px-Levante_Uni%C3%B3n_Deportiva%2C_S.A.D._logo.svg.png" alt="Levante UD Logo" class="logo">Levante UD</td>
+                        <td>38</td>
+                        <td>8</td>
+                        <td>11</td>
+                        <td>19</td>
+                        <td>51:76</td>
+                        <td>-25</td>
+                        <td>35</td>
+                    </tr>
+                    <!-- TWENTIETH -->
+                    <tr class="table-danger">
+                        <th scope="row">20</th>
+                        <td class="text-start"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Deportivo_Alaves_logo_%282020%29.svg/1200px-Deportivo_Alaves_logo_%282020%29.svg.png" alt="Deportivo Alavés Logo" class="logo">Deportivo Alavés</td>
+                        <td>38</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>23</td>
+                        <td>31:65</td>
+                        <td>-34</td>
+                        <td>31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

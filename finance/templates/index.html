@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    {{ temp }}
+    <table class="table table-light" id="indextable">
+        <colgroup>
+            <col>
+            <col style="width:330px">
+        </colgroup>
+        <thead class="table-dark">
+        <tr>
+            <th>Stock Symbol</th>
+            <th>Name of Company</th>
+            <th>Amount of Shares</th>
+            <th>Current Price</th>
+            <th>Total Value</th>
+            <th>Buy/Sell</th>
+        </tr>
+        </thead>
+        {% for row in transactions %}
+        <tr>
+            <td>{{ row["symbol"] }}</td>
+            <td>{{ names[row["symbol"]] }}</td>
+            <td>{{ row["shares"] }}</td>
+            <td>{{ prices[row["symbol"]] }}</td>
+            <td>{{ total[row["symbol"]] }}</td>
+            <td>
+                <form action="/" method="post">
+                    <div class="mb-3">
+                        <input autocomplete="off" class="form-control mx-auto w-auto" min="0" id="sellindex" name="shares" placeholder="Qty" type="number">
+                        <input type="hidden" name="stock" value="{{ row['symbol'] }}">
+                        <div class="btn-group">
+                            <button type="submit" name="button" value="buy">Buy</button>
+                            <button class="sell" type="submit" name="button" value="sell">Sell</button>
+                        </div>
+                    </div>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+        <tr class="empty">
+            <td colspan="6" style="background-color:#ffffff"></td>
+        </tr>
+        <tr class="totals">
+            <td colspan="4" style="border-bottom-style:none; background-color:#ffffff"></td>
+            <th style="color:#ffffff; background-color:#696969; border-style:solid">Stock</th>
+            <td>{{ stock }}</td>
+        </tr>
+        <tr class="totals">
+            <td colspan="4" style="border-bottom-style:none; background-color:#ffffff"></td>
+            <th style="color:#ffffff; background-color:#696969; border-bottom-style:solid">Cash</th>
+            <td>{{ cash }}</td>
+        </tr>
+        <tr class="totals" style="border-bottom:#ffffff">
+            <td colspan="4" style="border-bottom-style:none; background-color:#ffffff"></td>
+            <th style="color:#ffffff; background-color:#696969; border-bottom-style:hidden">Total</th>
+            <td>{{ allassets }}</td>
+        </tr>
+    </table>
+{% endblock %}

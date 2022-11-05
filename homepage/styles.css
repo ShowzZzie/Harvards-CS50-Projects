@@ -1,0 +1,244 @@
+.unrotated {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 46%;
+}
+
+.unrotated1 {
+    margin-top: 20px;
+}
+
+.rotated {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    width: 40%;
+}
+
+#rotate {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.div1 {
+    background-color: #FFA500;
+}
+
+.table-info tbody tr:nth-of-type(even) {
+    background: #FFA500!important;
+}
+
+.table-info tbody tr:nth-of-type(odd) {
+    background: #FFA500!important;
+}
+
+.table-info{--bs-table-bg:#ffd580;--bs-table-striped-bg:#c5e8ef;--bs-table-striped-color:#000;--bs-table-active-bg:#badce3;--bs-table-active-color:#000;--bs-table-hover-bg:#bfe2e9;--bs-table-hover-color:#000;color:#000;border-color:#badce3 !important}
+
+.table-warning{--bs-table-bg:#ffd700;--bs-table-striped-bg:#f2e7c3;--bs-table-striped-color:#000;--bs-table-active-bg:#e6dbb9;--bs-table-active-color:#000;--bs-table-hover-bg:#ece1be;--bs-table-hover-color:#000;color:#000;border-color:#e6dbb9!important}
+
+.table-danger{--bs-table-bg:#ee4b2b;--bs-table-striped-bg:#eccccf;--bs-table-striped-color:#000;--bs-table-active-bg:#dfc2c4;--bs-table-active-color:#000;--bs-table-hover-bg:#e5c7ca;--bs-table-hover-color:#000;color:#000;border-color:#dfc2c4 !important}
+
+.logo {
+    margin-right: 10px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+td {
+    vertical-align: middle;
+    font-size: 22px;
+    font-family: verdana;
+    font-weight: bold;
+}
+th {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+* {
+    font-size: 22px;
+}
+
+img[alt="Work of Art"] {
+    border-style: groove;
+    border-color: red;
+    border-width: 15px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #013369;
+    text-align: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: copperplate, fantasy;
+    font-size: 22px;
+    color: white;
+}
+
+  /* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #808080;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #696969;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    white-space: nowrap;
+}
+
+.nfllogo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: -30px;
+    width: 100%;
+    padding: 0px;
+}
+
+.linkonimg {
+    vertical-align: top;
+    text-align: center;
+    max-width: 80px;
+    margin: auto;
+    border: 1px red;
+}
+
+h3 {
+    font-family: 'Play', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.results {
+    text-align: center;
+    margin: none;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+table.results tr {
+    vertical-align: middle;
+}
+
+table.results td {
+    padding: 0px 15px;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.recordLeft {
+    font-size: 12px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.recordRight {
+    font-size: 12px;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.aaa {
+    vertical-align: middle;
+}
+
+.withscores {
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.byes {
+    vertical-align: middle;
+    text-align: center;
+    padding-right: 15px;
+}
+
+img[alt="New England Patriots"] {
+    width: 45px;
+}
+
+img[alt="Baltimore Ravens"] {
+    width: 45px;
+}
+
+tr.topmargin>td {
+    padding-top: 16px;
+}
+
+.closer {
+    text-align: center;
+    margin: none;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    margin-top: -20px;
+}
+
+table.closer tr {
+    vertical-align: middle;
+}
+
+table.closer td {
+    padding: 0px 15px;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+h4 {
+    margin-top: -40px;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:link {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: inherit;
+}

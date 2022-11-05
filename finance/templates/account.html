@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your Account
+{% endblock %}
+
+{% block main %}
+    <img src="/static/cs50finance_FSM_logo_better.png" alt="FSM Logo" width="300" height="162"><br><br>
+    <div class="acc-user">
+        Hello, {{ name }}
+    </div>
+        <a href="/change">Change Password</a> <br>
+        <a href="/logout">Log Out</a>
+{% endblock %}

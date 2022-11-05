@@ -1,0 +1,22 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Fastest in sorted, it will only iterate once
+
+sort2 uses: Merge Sort
+
+How do you know?: Fastest in almost all scenarios
+
+sort3 uses: Selection Sort
+
+How do you know?: In randoms it was slower than Merge but way faster than Bubble
+
+0m.00s.000
+sort1 random5000 - 0.083s       sort2 random5000 - 0.031s       sort3 random5000 - 0.075s       Fastest random5000 = sort2
+sort1 random10000 - 0.338s      sort2 random10000 - 0.107s      sort3 random10000 - 0.188s      Fastest random10000 = sort2
+sort1 random50000 - 8.175s      sort2 random50000 - 1.081s      sort3 random50000 - 3.620s      Fastest random50000 = sort2
+sort1 reversed5000 - 0.094s     sort2 reversed5000 - 0.046s     sort3 reversed5000 - 0.051s     Fastest reversed5000 = sort2
+sort1 reversed10000 - 0.253s    sort2 reversed10000 - 0.075s    sort3 reversed10000 - 0.205s    Fastest reversed10000 = sort2
+sort1 reversed50000 - 7.038s    sort2 reversed50000 - 1.548s    sort3 reversed50000 - 3.692s    Fastest reversed50000 = sort2
+sort1 sorted5000 - 0.048s       sort2 sorted5000 - 0.032s       sort3 sorted5000 - 0.049s       Fastest sorted5000 = sort2
+sort1 sorted10000 - 0.091s      sort2 sorted10000 - 0.089s      sort3 sorted10000 - 0.190s      Fastest sorted10000 = sort2
+sort1 sorted50000 - 1.115s      sort2 sorted50000 - 1.167s      sort3 sorted50000 - 4.437s      Fastest sorted50000 = sort1

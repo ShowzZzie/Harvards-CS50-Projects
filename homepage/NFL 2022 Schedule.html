@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>NFL 2022 Schedule</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+        <style>
+            td img {
+                margin-left: 6px;
+                margin-right: 6px;
+                max-width: 100%;
+                height: 35px;
+                object-fit: contain;
+                width: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- template <a href="" title="Box Score" target="_blank"> -->
+        <div class="tab">
+            <button class="tablinks" onclick="openWeek(event, 'Week1')" id="default">Week 1</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week2')">Week 2</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week3')">Week 3</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week4')">Week 4</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week5')">Week 5</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week6')">Week 6</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week7')">Week 7</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week8')">Week 8</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week9')">Week 9</button>
+            <br>
+            <div class="linkonimg">
+                <a href="https://www.nfl.com" title="Visit the Official NFL Website" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png" alt="NFL Logo" class="nfllogo">
+                </a>
+            </div>
+            <br>
+            <button class="tablinks" onclick="openWeek(event, 'Week10')">Week 10</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week11')">Week 11</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week12')">Week 12</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week13')">Week 13</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week14')">Week 14</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week15')">Week 15</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week16')">Week 16</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week17')">Week 17</button>
+            <button class="tablinks" onclick="openWeek(event, 'Week18')">Week 18</button>
+        </div>
+        <div id="Week1" class="tabcontent">
+            <h3>Week 1</h3>
+            <h4>You can view the Box Score of a game by clicking on its score</h4>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(1-0)</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="withscores"><a href="https://www.nfl.com/games/bills-at-rams-2022-reg-1" title="Box Score" target="_blank">BUF 31 @ 10 LAR</a></span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="recordRight">(0-1)</span></td>
+                    <td><span class="recordLeft">(1-0)</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="withscores"><a href="https://www.nfl.com/games/saints-at-falcons-2022-reg-1" title="Box Score" target="_blank">NO 27 @ 26 ATL</a></span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="recordRight">(0-1)</span></td>
+                    <td><span class="recordLeft">(1-0)</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="withscores"><a href="https://www.nfl.com/games/browns-at-panthers-2022-reg-1" title="Box Score" target="_blank">CLE 26 @ 24 CAR</a></span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="recordRight">(0-1)</span></td>
+                    <td><span class="recordLeft">(0-1)</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="withscores"><a href="https://www.nfl.com/games/49ers-at-bears-2022-reg-1" title="Box Score" target="_blank">SF 10 @ 19 CHI</a></span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="recordRight">(1-0)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-0)</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="withscores"><a href="https://www.nfl.com/games/steelers-at-bengals-2022-reg-1" title="Box Score" target="_blank">PIT 23 @ 20 CIN</a></span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="recordRight">(0-1)</span></td>
+                    <td><span class="recordLeft">(1-0)</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="withscores"><a href="https://www.nfl.com/games/eagles-at-lions-2022-reg-1" title="Box Score" target="_blank">PHI 38 @ 35 DET</a></span><img src="./logos/DET.png" alt="Detroit Lions"><span class="recordRight">(0-1)</span></td>
+                    <td><span class="recordLeft">(0-0-1)</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="withscores"><a href="https://www.nfl.com/games/colts-at-texans-2022-reg-1" title="Box Score" target="_blank">IND 20 @ 20 HOU</a></span><img src="./logos/HOU.png" alt="Houston Texans"><span class="recordRight">(0-0-1)</span></td>
+                    <td><span class="recordLeft">(0-1)</span><img src="./logos/NE.png" alt="New England Patriots"><span class="withscores"><a href="https://www.nfl.com/games/patriots-at-dolphins-2022-reg-1" title="Box Score" target="_blank">NE 7 @ 20 MIA</a></span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="recordRight">(1-0)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-0)</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="withscores"><a href="https://www.nfl.com/games/ravens-at-jets-2022-reg-1" title="Box Score" target="_blank">BAL 24 @ 9 NYJ</a></span><img src="./logos/NYJ.png" alt="New York Jets"><span class="recordRight">(0-1)</span></td>
+                    <td><span class="recordLeft">(0-1)</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="withscores"><a href="https://www.nfl.com/games/jaguars-at-commanders-2022-reg-1" title="Box Score" target="_blank">JAX 22 @ 28 WAS</a></span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="recordRight">(1-0)</span></td>
+                    <td><span class="recordLeft">(1-0)</span><img src="./logos/NYG.png" alt="New York Giants"><span class="withscores"><a href="https://www.nfl.com/games/giants-at-titans-2022-reg-1" title="Box Score" target="_blank">NYG 21 @ 20 TEN</a></span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="recordRight">(0-1)</span></td>
+                    <td><span class="recordLeft">(1-0)</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="withscores"><a href="https://www.nfl.com/games/chiefs-at-cardinals-2022-reg-1" title="Box Score" target="_blank">KC 44 @ 21 ARI</a></span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="recordRight">(0-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(0-1)</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="withscores"><a href="https://www.nfl.com/games/raiders-at-chargers-2022-reg-1" title="Box Score" target="_blank">LV 19 @ 24 LAC</a></span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="recordRight">(1-0)</span></td>
+                    <td><span class="recordLeft">(0-1)</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="withscores"><a href="https://www.nfl.com/games/packers-at-vikings-2022-reg-1" title="Box Score" target="_blank">GB 7 @ 23 MIN</a></span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="recordRight">(1-0)</span></td>
+                    <td><span class="recordLeft">(1-0)</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="withscores"><a href="https://www.nfl.com/games/buccaneers-at-cowboys-2022-reg-1" title="Box Score" target="_blank">TB 19 @ 3 DAL</a></span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="recordRight">(0-1)</span></td>
+                    <td><span class="recordLeft">(0-1)</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="withscores"><a href="https://www.nfl.com/games/broncos-at-seahawks-2022-reg-1" title="Box Score" target="_blank">DEN 16 @ 17 SEA</a></span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="recordRight">(1-0)</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week2" class="tabcontent">
+            <h3>Week 2</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(1-1)</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="withscores"><a href="https://www.nfl.com/games/chargers-at-chiefs-2022-reg-2" title="Box Score" target="_blank">LAC 24 @ 27 KC</a></span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="recordRight">(2-0)</span></td>
+                    <td><span class="recordLeft">(2-0)</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="withscores"><a href="https://www.nfl.com/games/dolphins-at-ravens-2022-reg-2" title="Box Score" target="_blank">MIA 42 @ 38 BAL</a></span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="recordRight">(1-1)</span></td>
+                    <td><span class="recordLeft">(1-1)</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="withscores"><a href="https://www.nfl.com/games/jets-at-browns-2022-reg-2" title="Box Score" target="_blank">NYJ 31 @ 30 CLE</a></span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="recordRight">(1-1)</span></td>
+                    <td><span class="recordLeft">(1-1)</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="withscores"><a href="https://www.nfl.com/games/commanders-at-lions-2022-reg-2" title="Box Score" target="_blank">WAS 27 @ 36 DET</a></span><img src="./logos/DET.png" alt="Detroit Lions"><span class="recordRight">(1-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(0-1-1)</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="withscores"><a href="https://www.nfl.com/games/colts-at-jaguars-2022-reg-2" title="Box Score" target="_blank">IND 0 @ 24 JAX</a></span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="recordRight">(1-1)</span></td>
+                    <td><span class="recordLeft">(2-0)</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="withscores"><a href="https://www.nfl.com/games/buccaneers-at-saints-2022-reg-2" title="Box Score" target="_blank">TB 20 @ 10 NO</a></span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="recordRight">(1-1)</span></td>
+                    <td><span class="recordLeft">(0-2)</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="withscores"><a href="https://www.nfl.com/games/panthers-at-giants-2022-reg-2" title="Box Score" target="_blank">CAR 16 @ 19 NYG</a></span><img src="./logos/NYG.png" alt="New York Giants"><span class="recordRight">(2-0)</span></td>
+                    <td><span class="recordLeft">(1-1)</span><img src="./logos/NE.png" alt="New England Patriots"><span class="withscores"><a href="https://www.nfl.com/games/patriots-at-steelers-2022-reg-2" title="Box Score" target="_blank">NE 17 @ 14 PIT</a></span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="recordRight">(1-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(0-2)</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="withscores"><a href="https://www.nfl.com/games/falcons-at-rams-2022-reg-2" title="Box Score" target="_blank">ATL 27 @ 31 LAR</a></span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="recordRight">(1-1)</span></td>
+                    <td><span class="recordLeft">(1-1)</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="withscores"><a href="https://www.nfl.com/games/seahawks-at-49ers-2022-reg-2" title="Box Score" target="_blank">SEA 7 @ 27 SF</a></span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="recordRight">(1-1)</span></td>
+                    <td><span class="recordLeft">(0-2)</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="withscores"><a href="https://www.nfl.com/games/bengals-at-cowboys-2022-reg-2" title="Box Score" target="_blank">CIN 17 @ 20 DAL</a></span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="recordRight">(1-1)</span></td>
+                    <td><span class="recordLeft">(0-1-1)</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="withscores"><a href="https://www.nfl.com/games/texans-at-broncos-2022-reg-2" title="Box Score" target="_blank">HOU 9 @ 16 DEN</a></span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="recordRight">(1-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-1)</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="withscores"><a href="https://www.nfl.com/games/cardinals-at-raiders-2022-reg-2" title="Box Score" target="_blank">ARI 29 @ 23 LV</a></span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="recordRight">(0-2)</span></td>
+                    <td><span class="recordLeft">(1-1)</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="withscores"><a href="https://www.nfl.com/games/bears-at-packers-2022-reg-2" title="Box Score" target="_blank">CHI 10 @ 27 GB</a></span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="recordRight">(1-1)</span></td>
+                    <td><span class="recordLeft">(0-2)</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="withscores"><a href="https://www.nfl.com/games/titans-at-bills-2022-reg-2" title="Box Score" target="_blank">TEN 7 @ 41 BUF</a></span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="recordRight">(2-0)</span></td>
+                    <td><span class="recordLeft">(1-1)</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="withscores"><a href="https://www.nfl.com/games/vikings-at-eagles-2022-reg-2" title="Box Score" target="_blank">MIN 7 @ 24 PHI</a></span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="recordRight">(2-0)</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week3" class="tabcontent">
+            <h3>Week 3</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="withscores"><a href="https://www.nfl.com/games/steelers-at-browns-2022-reg-3" title="Box Score" target="_blank">PIT 17 @ 29 CLE</a></span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="withscores"><a href="https://www.nfl.com/games/saints-at-panthers-2022-reg-3" title="Box Score" target="_blank">NO 14 @ 22 CAR</a></span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(0-2-1)</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="withscores"><a href="https://www.nfl.com/games/texans-at-bears-2022-reg-3" title="Box Score" target="_blank">HOU 20 @ 23 CHI</a></span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="withscores"><a href="https://www.nfl.com/games/chiefs-at-colts-2022-reg-3" title="Box Score" target="_blank">KC 17 @ 20 IND</a></span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="recordRight">(1-1-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="withscores"><a href="https://www.nfl.com/games/bills-at-dolphins-2022-reg-3" title="Box Score" target="_blank">BUF 19 @ 21 MIA</a></span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="withscores"><a href="https://www.nfl.com/games/lions-at-vikings-2022-reg-3" title="Box Score" target="_blank">DET 24 @ 28 MIN</a></span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="withscores"><a href="https://www.nfl.com/games/ravens-at-patriots-2022-reg-3" title="Box Score" target="_blank">BAL 37 @ 26 NE</a></span><img src="./logos/NE.png" alt="New England Patriots"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="withscores"><a href="https://www.nfl.com/games/bengals-at-jets-2022-reg-3" title="Box Score" target="_blank">CIN 27 @ 12 NYJ</a></span><img src="./logos/NYJ.png" alt="New York Jets"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(0-3)</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="withscores"><a href="https://www.nfl.com/games/raiders-at-titans-2022-reg-3" title="Box Score" target="_blank">LV 22 @ 24 TEN</a></span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="withscores"><a href="https://www.nfl.com/games/eagles-at-commanders-2022-reg-3" title="Box Score" target="_blank">PHI 24 @ 8 WAS</a></span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="withscores"><a href="https://www.nfl.com/games/jaguars-at-chargers-2022-reg-3" title="Box Score" target="_blank">JAX 38 @ 10 LAC</a></span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="withscores"><a href="https://www.nfl.com/games/rams-at-cardinals-2022-reg-3" title="Box Score" target="_blank">LAR 20 @ 12 ARI</a></span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="withscores"><a href="https://www.nfl.com/games/falcons-at-seahawks-2022-reg-3" title="Box Score" target="_blank">ATL 27 @ 23 SEA</a></span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="withscores"><a href="https://www.nfl.com/games/packers-at-buccaneers-2022-reg-3" title="Box Score" target="_blank">GB 14 @ 12 TB</a></span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="withscores"><a href="https://www.nfl.com/games/49ers-at-broncos-2022-reg-3" title="Box Score" target="_blank">SF 10 @ 11 DEN</a></span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="withscores"><a href="https://www.nfl.com/games/cowboys-at-giants-2022-reg-3" title="Box Score" target="_blank">DAL 23 @ 16 NYG</a></span><img src="./logos/NYG.png" alt="New York Giants"><span class="recordRight">(2-1)</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week4" class="tabcontent">
+            <h3>Week 4</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="aaa">MIA @ CIN</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="aaa">MIN @ NO</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="aaa">CLE @ ATL</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="aaa">BUF @ BAL</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="aaa">WAS @ DAL</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="aaa">SEA @ DET</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="aaa">LAC @ HOU</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="recordRight">(0-2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="aaa">TEN @ IND</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="recordRight">(1-1-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="aaa">CHI @ NYG</span><img src="./logos/NYG.png" alt="New York Giants"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="aaa">JAX @ PHI</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="aaa">NYJ @ PIT</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="aaa">ARI @ CAR</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NE.png" alt="New England Patriots"><span class="aaa">NE @ GB</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="aaa">DEN @ LV</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="recordRight">(0-3)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="aaa">KC @ TB</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="aaa">LAR @ SF</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="recordRight">(1-2)</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week5" class="tabcontent">
+            <h3>Week 5</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(1-1-1)</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="aaa">IND @ DEN</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/NYG.png" alt="New York Giants"><span class="aaa">NYG @ GB</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="aaa">PIT @ BUF</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="aaa">LAC @ CLE</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(0-2-1)</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="aaa">HOU @ JAX</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="aaa">CHI @ MIN</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="aaa">DET @ NE</span><img src="./logos/NE.png" alt="New England Patriots"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="aaa">SEA @ NO</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="aaa">MIA @ NYJ</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="aaa">ATL @ TB</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="aaa">TEN @ WAS</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="aaa">SF @ CAR</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="aaa">PHI @ ARI</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="aaa">DAL @ LAR</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="aaa">CIN @ BAL</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(0-3)</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="aaa">LV @ KC</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="recordRight">(2-1)</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week6" class="tabcontent">
+            <h3>Week 6</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="aaa">WAS @ CHI</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="aaa">SF @ ATL</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NE.png" alt="New England Patriots"><span class="aaa">NE @ CLE</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="aaa">NYJ @ GB</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="aaa">JAX @ IND</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="recordRight">(1-1-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="aaa">MIN @ MIA</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="aaa">CIN @ NO</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="aaa">BAL @ NYG</span><img src="./logos/NYG.png" alt="New York Giants"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="aaa">TB @ PIT</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="aaa">CAR @ LAR</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="aaa">ARI @ SEA</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="aaa">BUF @ KC</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="aaa">DAL @ PHI</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="aaa">DEN @ LAC</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span class="byes">TEAMS ON BYE: <img src="./logos/DET.png" alt="Detroit Lions">Lions </span><span class="byes"><img src="./logos/HOU.png" alt="Houston Texans">Texans </span><span class="byes"><img src="./logos/LV.png" alt="Las Vegas Raiders">Raiders </span><img src="./logos/TEN.png" alt="Tennessee Titans">Titans</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week7" class="tabcontent">
+            <h3>Week 7</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="aaa">NO @ ARI</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="aaa">CLE @ BAL</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="aaa">TB @ CAR</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="aaa">ATL @ CIN</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="aaa">DET @ DAL</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/NYG.png" alt="New York Giants"><span class="aaa">NYG @ JAX</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-1-1)</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="aaa">IND @ TEN</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="aaa">GB @ WAS</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="aaa">NYJ @ DEN</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(0-2-1)</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="aaa">HOU @ LV</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="recordRight">(0-3)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="aaa">SEA @ LAC</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="aaa">KC @ SF</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="aaa">PIT @ MIA</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="aaa">CHI @ NE</span><img src="./logos/NE.png" alt="New England Patriots"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span class="byes">TEAMS ON BYE: <img src="./logos/BUF.png" alt="Buffalo Bills">Bills </span><span class="byes"><img src="./logos/LAR.png" alt="Los Angeles Rams">Rams </span><span class="byes"><img src="./logos/MIN.png" alt="Minnesota Vikings">Vikings </span><img src="./logos/PHI.png" alt="Philadelphia Eagles">Eagles</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week8" class="tabcontent">
+            <h3>Week 8</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="aaa">BAL @ TB</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="aaa">DEN @ JAX</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="aaa">CAR @ ATL</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="aaa">CHI @ DAL</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="aaa">MIA @ DET</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="aaa">ARI @ MIN</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(0-3)</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="aaa">LV @ NO</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NE.png" alt="New England Patriots"><span class="aaa">NE @ NYJ</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="aaa">PIT @ PHI</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="aaa">TEN @ HOU</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="recordRight">(0-2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="aaa">WAS @ IND</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="recordRight">(1-1-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="aaa">SF @ LAR</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr> <td colspan="4">
+                    <table class="results">
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/NYG.png" alt="New York Giants"><span class="aaa">NYG @ SEA</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="recordRight">(1-2)</span></td>
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="aaa">GB @ BUF</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="recordRight">(2-1)</span></td>
+                        <td><span class="recordLeft">(1-2)</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="aaa">CIN @ CLE</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="recordRight">(2-1)</span></td>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span class="byes">TEAMS ON BYE: <img src="./logos/KC.png" alt="Kansas City Chiefs">Chiefs </span><span class="byes"><img src="./logos/LAC.png" alt="Los Angeles Chargers">Chargers</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week9" class="tabcontent">
+            <h3>Week 9</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="aaa">PHI @ HOU</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="recordRight">(0-2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="aaa">LAC @ ATL</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="aaa">MIA @ CHI</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="aaa">CAR @ CIN</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr class="topmargin"><td colspan="4">
+                    <table class="closer">
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="aaa">GB @ DET</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="recordRight">(1-2)</span></td>
+                        <td><span class="recordLeft">(0-3)</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="aaa">LV @ JAX</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="recordRight">(2-1)</span></td>
+                        <td><span class="recordLeft">(1-1-1)</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="aaa">IND @ NE</span><img src="./logos/NE.png" alt="New England Patriots"><span class="recordRight">(1-2)</span></td>
+                    </table></td>
+                </tr>
+                <tr><td colspan="4">
+                    <table class="closer">
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="aaa">BUF @ NYJ</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="recordRight">(1-2)</span></td>
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="aaa">MIN @ WAS</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="recordRight">(1-2)</span></td>
+                        <td><span class="recordLeft">(1-2)</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="aaa">SEA @ ARI</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="recordRight">(1-2)</span></td>
+                    </table></td>
+                </tr>
+                <tr><td colspan="4">
+                    <table class="closer">
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="aaa">LAR @ TB</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="recordRight">(2-1)</span></td>
+                        <td><span class="recordLeft">(1-2)</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="aaa">TEN @ KC</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="recordRight">(2-1)</span></td>
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="aaa">BAL @ NO</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="recordRight">(1-2)</span></td>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span class="byes">TEAMS ON BYE: <img src="./logos/CLE.png" alt="Cleveland Browns">Browns </span><span class="byes"><img src="./logos/DAL.png" alt="Dallas Cowboys">Cowboys </span><span class="byes"><img src="./logos/DEN.png" alt="Denver Broncos">Broncos </span><span class="byes"><img src="./logos/NYG.png" alt="New York Giants">Giants </span><span class="byes"><img src="./logos/PIT.png" alt="Pittsburgh Steelers">Steelers </span><span class="byes"><img src="./logos/SF.png" alt="San Francisco 49ers">49ers</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week10" class="tabcontent">
+            <h3>Week 10</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="aaa">ATL @ CAR</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="aaa">SEA @ TB</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="aaa">MIN @ BUF</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="aaa">DET @ CHI</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="aaa">JAX @ KC</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="aaa">CLE @ MIA</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(0-2-1)</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="aaa">HOU @ NYG</span><img src="./logos/NYG.png" alt="New York Giants"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="aaa">NO @ PIT</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="aaa">DEN @ TEN</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-1-1)</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="aaa">IND @ LV</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="recordRight">(0-3)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="aaa">DAL @ GB</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="aaa">ARI @ LAR</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="aaa">LAC @ SF</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="aaa">WAS @ PHI</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="recordRight">(3-0)</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span class="byes">TEAMS ON BYE: <img src="./logos/BAL.png" alt="Baltimore Ravens">Ravens </span><span class="byes"><img src="./logos/CIN.png" alt="Cincinnati Bengals">Bengals </span><span class="byes"><img src="./logos/NE.png" alt="New England Patriots">Patriots </span><span class="byes"><img src="./logos/NYJ.png" alt="New York Jets">Jets</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week11" class="tabcontent">
+            <h3>Week 11</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="aaa">TEN @ GB</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="aaa">CHI @ ATL</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="aaa">CAR @ BAL</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="aaa">CLE @ BUF</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="aaa">WAS @ HOU</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="recordRight">(0-2-1)</span></td>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="aaa">PHI @ IND</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="recordRight">(1-1-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="aaa">NYJ @ NE</span><img src="./logos/NE.png" alt="New England Patriots"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="aaa">LAR @ NO</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="aaa">DET @ NYG</span><img src="./logos/NYG.png" alt="New York Giants"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(0-3)</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="aaa">LV @ DEN</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="aaa">KC @ LAC</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="aaa">DAL @ MIN</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="aaa">CIN @ PIT</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="aaa">SF @ ARI</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span class="byes">TEAMS ON BYE: <img src="./logos/JAX.png" alt="Jacksonville Jaguars">Jaguars </span><span class="byes"><img src="./logos/MIA.png" alt="Miami Dolphins">Dolphins </span><span class="byes"><img src="./logos/SEA.png" alt="Seattle Seahawks">Seahawks </span><span class="byes"><img src="./logos/TB.png" alt="Tampa Bay Buccaneers">Buccaneers</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week12" class="tabcontent">
+            <h3>Week 12</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="aaa">BUF @ DET</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/NYG.png" alt="New York Giants"><span class="aaa">NYG @ DAL</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NE.png" alt="New England Patriots"><span class="aaa">NE @ MIN</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="aaa">DEN @ CAR</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="aaa">TB @ CLE</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="aaa">BAL @ JAX</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(0-2-1)</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="aaa">HOU @ MIA</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="aaa">CHI @ NYJ</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="aaa">CIN @ TEN</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="aaa">ATL @ WAS</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="aaa">LAC @ ARI</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(0-3)</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="aaa">LV @ SEA</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="aaa">LAR @ KC</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="aaa">NO @ SF</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="aaa">GB @ PHI</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="aaa">PIT @ IND</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="recordRight">(1-1-1)</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week13" class="tabcontent">
+            <h3>Week 13</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="aaa">BUF @ NE</span><img src="./logos/NE.png" alt="New England Patriots"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="aaa">PIT @ ATL</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="aaa">DEN @ BAL</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="aaa">GB @ CHI</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="aaa">JAX @ DET</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="aaa">CLE @ HOU</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="recordRight">(0-2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="aaa">NYJ @ MIN</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="aaa">WAS @ NYG</span><img src="./logos/NYG.png" alt="New York Giants"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="aaa">TEN @ PHI</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="aaa">SEA @ LAR</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="aaa">MIA @ SF</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="aaa">KC @ CIN</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr><td colspan="4">
+                    <table class="results">
+                        <td><span class="recordLeft">(1-2)</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="aaa">LAC @ LV</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="recordRight">(0-3)</span></td>
+                        <td><span class="recordLeft">(1-1-1)</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="aaa">IND @ DAL</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="recordRight">(2-1)</span></td>
+                        <td><span class="recordLeft">(1-2)</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="aaa">NO @ TB</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="recordRight">(2-1)</span></td>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span class="byes">TEAMS ON BYE: <img src="./logos/ARI.png" alt="Arizona Cardinals">Cardinals </span><span class="byes"><img src="./logos/CAR.png" alt="Carolina Panthers">Panthers</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week14" class="tabcontent">
+            <h3>Week 14</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(0-3)</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="aaa">LV @ LAR</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="aaa">NYJ @ BUF</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="aaa">CLE @ CIN</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(0-2-1)</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="aaa">HOU @ DAL</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="recordRight">(2-1))</span></td>
+                </tr>
+                <tr class="topmargin"><td colspan="4">
+                    <table class="closer">
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="aaa">MIN @ DET</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="recordRight">(1-2)</span></td>
+                        <td><span class="recordLeft">(3-0)</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="aaa">PHI @ NYG</span><img src="./logos/NYG.png" alt="New York Giants"><span class="recordRight">(2-1)</span></td>
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="aaa">BAL @ PIT</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="recordRight">(1-2)</span></td>
+                    </table></td>
+                </tr>
+                <tr><td colspan="4">
+                    <table class="closer">
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="aaa">JAX @ TEN</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="recordRight">(1-2)</span></td>
+                        <td><span class="recordLeft">(3-0)</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="aaa">MIA @ LAC</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="recordRight">(1-2)</span></td>
+                        <td><span class="recordLeft">(1-2)</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="aaa">CAR @ SEA</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="recordRight">(1-2)</span></td>
+                    </table></td>
+                </tr>
+                <tr><td colspan="4">
+                    <table class="closer">
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="aaa">TB @ SF</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="recordRight">(1-2)</span></td>
+                        <td><span class="recordLeft">(2-1)</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="aaa">KC @ DEN</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="recordRight">(2-1)</span></td>
+                        <td><span class="recordLeft">(1-2)</span><img src="./logos/NE.png" alt="New England Patriots"><span class="aaa">NE @ ARI</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="recordRight">(1-2)</span></td>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><span class="byes">TEAMS ON BYE: <img src="./logos/ATL.png" alt="Atlanta Falcons">Falcons </span><span class="byes"><img src="./logos/CHI.png" alt="Chicago Bears">Bears </span><span class="byes"><img src="./logos/GB.png" alt="Green Bay Packers">Packers </span><span class="byes"><img src="./logos/IND.png" alt="Indianapolis Colts">Colts </span><span class="byes"><img src="./logos/NO.png" alt="New Orleans Saints">Saints </span><span class="byes"><img src="./logos/WAS.png" alt="Washington Commanders">Commanders</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week15" class="tabcontent">
+            <h3>Week 15</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="aaa">SF @ SEA</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="aaa">PIT @ CAR</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="aaa">PHI @ CHI</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="aaa">KC @ HOU</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="recordRight">(0-2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="aaa">DAL @ JAX</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="aaa">DET @ NYJ</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="aaa">ARI @ DEN</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="aaa">TEN @ LAC</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="aaa">CIN @ TB</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NE.png" alt="New England Patriots"><span class="aaa">NE @ LV</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="recordRight">(0-3)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="aaa">LAR @ GB</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="aaa">MIA @ BUF</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="aaa">BAL @ CLE</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-1-1)</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="aaa">IND @ MIN</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="aaa">ATL @ NO</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/NYG.png" alt="New York Giants"><span class="aaa">NYG @ WAS</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="recordRight">(1-2)</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week16" class="tabcontent">
+            <h3>Week 16</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="aaa">JAX @ NYJ</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="aaa">ATL @ BAL</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="aaa">DET @ CAR</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="aaa">BUF @ CHI</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="aaa">NO @ CLE</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="aaa">SEA @ KC</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/NYG.png" alt="New York Giants"><span class="aaa">NYG @ MIN</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="aaa">CIN @ NE</span><img src="./logos/NE.png" alt="New England Patriots"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(0-2-1)</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="aaa">HOU @ TEN</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="aaa">WAS @ SF</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="aaa">PHI @ DAL</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(0-3)</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="aaa">LV @ PIT</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="aaa">GB @ MIA</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="aaa">DEN @ LAR</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="aaa">TB @ ARI</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="aaa">LAC @ IND</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="recordRight">(1-1-1)</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week17" class="tabcontent">
+            <h3>Week 17</h3>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="aaa">DAL @ TEN</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="aaa">ARI @ ATL</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="aaa">PIT @ BAL</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="aaa">CHI @ DET</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="aaa">JAX @ HOU</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="recordRight">(0-2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="aaa">DEN @ KC</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(3-0)</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="aaa">MIA @ NE</span><img src="./logos/NE.png" alt="New England Patriots"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-1-1)</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="aaa">IND @ NYG</span><img src="./logos/NYG.png" alt="New York Giants"><span class="recordRight">(2-1)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="aaa">NO @ PHI</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="aaa">CAR @ TB</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="aaa">CLE @ WAS</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="aaa">SF @ LV</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="recordRight">(0-3)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="aaa">NYJ @ SEA</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="aaa">MIN @ GB</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="aaa">LAR @ LAC</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="aaa">BUF @ CIN</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="recordRight">(1-2)</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Week18" class="tabcontent">
+            <h3>Week 18*</h3>
+            <h4>*yet to be scheduled</h4>
+            <table class="results">
+                <tr>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/TB.png" alt="Tampa Bay Buccaneers"><span class="aaa">TB @ ATL</span><img src="./logos/ATL.png" alt="Atlanta Hawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NE.png" alt="New England Patriots"><span class="aaa">NE @ BUF</span><img src="./logos/BUF.png" alt="Buffalo Bills"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/MIN.png" alt="Minnesota Vikings"><span class="aaa">MIN @ CHI</span><img src="./logos/CHI.png" alt="Chicago Bears"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/BAL.png" alt="Baltimore Ravens"><span class="aaa">BAL @ CIN</span><img src="./logos/CIN.png" alt="Cincinnati Bengals"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/DET.png" alt="Detroit Lions"><span class="aaa">DET @ GB</span><img src="./logos/GB.png" alt="Green Bay Packers"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(0-2-1)</span><img src="./logos/HOU.png" alt="Houston Texans"><span class="aaa">HOU @ IND</span><img src="./logos/IND.png" alt="Indianapolis Colts"><span class="recordRight">(1-1-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/TEN.png" alt="Tennessee Titans"><span class="aaa">TEN @ JAX</span><img src="./logos/JAX.png" alt="Jacksonville Jaguars"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/NYJ.png" alt="New York Jets"><span class="aaa">NYJ @ MIA</span><img src="./logos/MIA.png" alt="Miami Dolphins"><span class="recordRight">(3-0)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/CAR.png" alt="Carolina Panthers"><span class="aaa">CAR @ NO</span><img src="./logos/NO.png" alt="New Orleans Saints"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/NYG.png" alt="New York Giants"><span class="aaa">NYG @ PHI</span><img src="./logos/PHI.png" alt="Philadelphia Eagles"><span class="recordRight">(3-0)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/CLE.png" alt="Cleveland Browns"><span class="aaa">CLE @ PIT</span><img src="./logos/PIT.png" alt="Pittsburgh Steelers"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/DAL.png" alt="Dallas Cowboys"><span class="aaa">DAL @ WAS</span><img src="./logos/WAS.png" alt="Washington Commanders"><span class="recordRight">(1-2)</span></td>
+                </tr>
+                <tr>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/LAC.png" alt="Los Angeles Chargers"><span class="aaa">LAC @ DEN</span><img src="./logos/DEN.png" alt="Denver Broncos"><span class="recordRight">(2-1)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/KC.png" alt="Kansas City Chiefs"><span class="aaa">KC @ LV</span><img src="./logos/LV.png" alt="Las Vegas Raiders"><span class="recordRight">(0-3)</span></td>
+                    <td><span class="recordLeft">(2-1)</span><img src="./logos/LAR.png" alt="Los Angeles Rams"><span class="aaa">LAR @ SEA</span><img src="./logos/SEA.png" alt="Seattle Seahawks"><span class="recordRight">(1-2)</span></td>
+                    <td><span class="recordLeft">(1-2)</span><img src="./logos/ARI.png" alt="Arizona Cardinals"><span class="aaa">ARI @ SF</span><img src="./logos/SF.png" alt="San Francisco 49ers"><span class="recordRight">(1-2)</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+            document.getElementById("default").click();
+
+            function openWeek(evt, week) {
+                var i, tabcontent, tablinks;
+
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                }
+
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                document.getElementById(week).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+    </body>
+</html>
